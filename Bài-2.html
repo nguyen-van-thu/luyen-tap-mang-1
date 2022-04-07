@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài-2</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    for (let i = 0; i < 10; i++) {
+        mang[i] = Math.floor(Math.random() * 20 + 1);
+        document.write(mang[i]+ '<br/>')
+    }
+    let max = mang[0];
+    let index = 0;
+    for (let i = 1; i <= mang.length; i++) {
+
+        if (mang[i] > max) {
+            max = mang[i];
+            index = i;
+        }
+    }
+    console.log(max);
+    console.log(index);
+</script>
+</body>
+</html>

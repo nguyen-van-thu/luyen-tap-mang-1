@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    function N1() {
+        let arr1 = [];
+        for (let i = 0; i < 10; i++) {
+            arr1[i] = Math.floor(Math.random() * 10 + 1);
+            document.write(arr1[i] + ' ');
+        }
+        console.log(arr1);
+        let a =0;
+        for (let i = 0;i < 10; i ++){
+            if (arr1[i] ===5){
+                a++;
+            }
+        }
+        if (a != 0);{
+            document.write("5 co trog mang");
+            arr1.splice(arr1[5]);
+            arr1.push(arr1[0])
+            console.log(arr1)
+        }
+        // else{
+        //     document.write("5 k co trong mang")
+        // }
+
+    }
+    N1();
+</script>
+</body>
+</html>

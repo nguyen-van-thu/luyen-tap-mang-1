@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<script>
+    function N1() {
+        let arr1 = [];
+        for (let i = 0; i < 10; i++) {
+            arr1[i] = Math.floor(Math.random() * 20 + 1);
+            document.write(arr1[i]+ ' ');
+        }
+        console.log(arr1);
+
+            let count = 0;
+            for (let i = 0; i < 10; i++) {
+                if (arr1[i] > 10) {
+                    count++;
+                }
+            }
+            alert(`Your input Array has ${count} number(s) that greater than 10`)
+        }
+        N1();
+
+</script>
+</body>
+</html>
